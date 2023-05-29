@@ -1,0 +1,123 @@
+[
+	{
+		"id": "01",
+		"serial": 1,
+		"enName": "Akihabara",
+		"name": "秋葉原",
+		"furigana": "あきはばら"
+	},  {
+		"id": "02",
+		"serial": 2,
+		"enName": "Shin Okachimachi",
+		"name": "新御徒町",
+		"furigana": "あきはばら"
+	},	{
+		"id": "03",
+		"serial": 3,
+		"enName": "Asakusa",
+		"name": "浅草",
+		"furigana": "あさくさ"
+	},	{
+		"id": "04",
+		"serial": 4,
+		"enName": "Minami Senju",
+		"name": "南千住",
+		"furigana": "みなみせんじゅ"
+	},	{
+		"id": "05",
+		"serial": 5,
+		"enName": "Kita Senju",
+		"name": "北千住",
+		"furigana": "きたせんじゅ"
+	},	{
+		"id": "06",
+		"serial": 6,
+		"enName": "Aoi",
+		"name": "青井",
+		"furigana": "あおい"
+	},	{
+		"id": "07",
+		"serial": 7,
+		"enName": "Rokuchō",
+		"name": "六町",
+		"furigana": "ろくちょう"
+	},	{
+		"id": "08",
+		"serial": 8,
+		"enName": "Yashio",
+		"name": "八潮",
+		"furigana": "やしお"
+	},	{
+		"id": "09",
+		"serial": 9,
+		"enName": "Misato chūō",
+		"name": "三郷中央",
+		"furigana": "みさとちゅうおう"
+	},	{
+		"id": "10",
+		"serial": 10,
+		"enName": "Minami Nagareyama",
+		"name": "南流山",
+		"furigana": "みなみながれやま"
+	},	{
+		"id": "11",
+		"serial": 11,
+		"enName": "Nagareyama centralpark",
+		"name": "流山セントラルパーク",
+		"furigana": "ながれやまセントラルパーク"
+	},	{
+		"id": "12",
+		"serial": 12,
+		"enName": "Nagareyama ōtakanomori",
+		"name": "流山おおたかの森",
+		"furigana": "ながれやまおおたかのもり"
+	},	{
+		"id": "13",
+		"serial": 13,
+		"enName": "Kashiwanoha campus",
+		"name": "柏の葉キャンパス",
+		"furigana": "かしわのはキャンパス"
+	},	{
+		"id": "14",
+		"serial": 14,
+		"enName": "Kashiwa Tanaka",
+		"name": "柏たなか",
+		"furigana": "かしわたなか"
+	},	{
+		"id": "15",
+		"serial": 15,
+		"enName": "Moriya",
+		"name": "守谷",
+		"furigana": "もりや"
+	},	{
+		"id": "16",
+		"serial": 16,
+		"enName": "Miraidaira",
+		"name": "みらい平",
+		"furigana": "みらいだいら"
+	},	{
+		"id": "17",
+		"serial": 17,
+		"enName": "Midorino",
+		"name": "みどりの",
+		"furigana": "みどりの"
+	},	{
+		"id": "18",
+		"serial": 18,
+		"enName": "Bampaku kinenkōen",
+		"name": "万博記念公園",
+		"furigana": "ばんぱくきねんこうえん"
+	},	{
+		"id": "19",
+		"serial": 19,
+		"enName": "Kenkyū gakuen",
+		"name": "研究学園",
+		"furigana": "けんきゅうがくえん"
+	},	{
+		"id": "20",
+		"serial": 20,
+		"enName": "Tsukuba",
+		"name": "つくば",
+		"furigana": "つくば"
+	}
+]
