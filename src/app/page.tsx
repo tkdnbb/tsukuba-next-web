@@ -3,9 +3,10 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         Tsukuba Express Simulator
+        Github: https://github.com/tkdnbb/tsukuba-next-web/
       </div>
       <div>
         <LineRouteMap />
@@ -14,11 +15,14 @@ export default function Home() {
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/tx.png"
-          alt="Next.js Logo"
+          alt="Tsukuba express Logo"
           width={180}
           height={37}
           priority
         />
+      </div>
+      <div>
+        (This is just an early version. I will continue to iterate)
       </div>
     </main>
   )
