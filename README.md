@@ -1,3 +1,16 @@
+# Tsukuba express simulator
+Once I went to Adachi Ward in Tokyo to meet a friend. The map app suggested that I take the Tsukuba Express, so I took it for the first time.
+
+![IMG_4753](https://github.com/tkdnbb/tsukuba-next-web/assets/61271172/d3e69a6b-ad08-4055-a065-715a42ada8d3)
+
+A route map in the train.
+
+As I learned more about this line, I felt it was necessary to create a website to introduce it.
+
+![tsukuba_express_simulator](https://github.com/tkdnbb/tsukuba-next-web/assets/61271172/44f24580-5fac-435f-b033-9b8728d122c4)
+
+This is just an early version, I will continue to iterate.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
