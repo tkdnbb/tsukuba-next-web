@@ -7,7 +7,7 @@ A route map in the train.
 
 As I learned more about this line, I felt it was necessary to create a website to introduce it.
 
-![tsukuba_express_simulator](https://github.com/tkdnbb/tsukuba-next-web/assets/61271172/44f24580-5fac-435f-b033-9b8728d122c4)
+![tsukuba_express_simulator](https://github.com/tkdnbb/tsukuba-next-web/assets/61271172/35122515-8e75-480f-8973-62b677a8150e)
 
 This is just an early version, I will continue to iterate.
 
