@@ -155,7 +155,7 @@ const StationLabel = ({
   isDestination,
 }: StationLabelProps) => {
   const isMultiLine = multiLineEnNames.has(enName);
-  const enNameClass = cn("text-xs -rotate-12 leading-3", {
+  const enNameClass = cn("text-xs -rotate-15 leading-3", {
     "translate-x-4.5 translate-y-5": !isMultiLine,
     "translate-x-4 translate-y-1.5": isMultiLine,
     "translate-x-4 translate-y-1": enName === "Bampaku kinenkōen",
@@ -165,7 +165,6 @@ const StationLabel = ({
     "translate-x-5": enName.length > 5 && enName.length < 7,
     "translate-x-5.5": enName.length > 7 && enName.length < 10,
     "translate-y-5": enName.length < 8,
-    //"translate-y-6": enName.length < 4
   });
   const nameClass = cn("flex flex-col flex-1 justify-between", {
     "text-[27px]": name.length > 3,
@@ -189,14 +188,14 @@ const StationLabel = ({
     }
   );
   const redRectClass = cn(
-    "absolute flex items-center justify-between top-17.5 h-7 w-13 -left-13 px-0.5 bg-red-600",
+    "absolute flex items-center justify-between top-17.5 h-7 w-12.5 -left-12.5 px-0.5 bg-red-600",
     {
       hidden: serial === 20,
     }
   );
 
   return (
-    <section className="w-26 min-w-[6.5rem]">
+    <section className="w-25 min-w-[6.25rem]">
       <div className="flex">
         <div className="translate-x-2.5 font-number">{id}</div>
         <div className={enNameClass}>{transformEnName(enName)}</div>
