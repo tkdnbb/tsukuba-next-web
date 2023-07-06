@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Pentagon from "../atoms/Pentagon";
 
 export type StationId =
   | "01"
@@ -112,6 +113,9 @@ export interface StationLabelProps {
   enName: StationEnName;
   name: StationName;
   furigana: StationFurigana;
+  active?: "left" | "right";
+  isDestination?: boolean;
+  isStop?: boolean;
 }
 
 const multiLineEnNames = new Set([
@@ -146,6 +150,9 @@ const StationLabel = ({
   furigana,
   enName,
   serial,
+  active,
+  isStop,
+  isDestination,
 }: StationLabelProps) => {
   const isMultiLine = multiLineEnNames.has(enName);
   const enNameClass = cn("text-xs -rotate-12 leading-3", {
@@ -174,6 +181,19 @@ const StationLabel = ({
       "-right-[22px]": name.length > 6,
     }
   );
+  const circleClass = cn(
+    "rounded-full bg-slate-300 w-6 h-6 border border-solid border-gray-500",
+    {
+      "bg-red-600": isDestination,
+      "bg-yellow-400": isStop,
+    }
+  );
+  const redRectClass = cn(
+    "absolute flex items-center justify-between top-17.5 h-7 w-13 -left-13 px-0.5 bg-red-600",
+    {
+      hidden: serial === 20,
+    }
+  );
 
   return (
     <section className="w-26 min-w-[6.5rem]">
@@ -181,10 +201,13 @@ const StationLabel = ({
         <div className="translate-x-2.5 font-number">{id}</div>
         <div className={enNameClass}>{transformEnName(enName)}</div>
       </div>
-
-      <div className="flex items-center py-2 gap-[3px]">
+      <div className="flex items-center py-2 gap-[3px] relative">
+        <div className={redRectClass}>
+          <Pentagon direction="left" active={active === "left"} />
+          <Pentagon direction="right" active={active === "right"} />
+        </div>
         <div className="flex bg-gray-400 rounded-2xl flex-col w-9 items-center justify-start text-center text-3xl py-[6px] min-h-[140px] border border-solid border-gray-900">
-          <div className="rounded-full bg-slate-300 w-6 h-6 border border-solid border-gray-500"></div>
+          <div className={circleClass}></div>
           <div className="relative flex flex-1">
             <div className={nameClass}>
               {name.split("").map((i, idx) => (
