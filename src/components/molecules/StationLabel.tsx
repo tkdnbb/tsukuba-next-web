@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Pentagon from "../atoms/Pentagon";
+import TransferLine from "../atoms/TransferLine";
 
 export type StationId =
   | "01"
@@ -195,7 +196,7 @@ const StationLabel = ({
   );
 
   return (
-    <section className="w-25 min-w-[6.25rem]">
+    <section className="w-25 min-w-[6.25rem] min-h-[398px]">
       <div className="flex">
         <div className="translate-x-2.5 font-number">{id}</div>
         <div className={enNameClass}>{transformEnName(enName)}</div>
@@ -205,20 +206,23 @@ const StationLabel = ({
           <Pentagon direction="left" active={active === "left"} />
           <Pentagon direction="right" active={active === "right"} />
         </div>
-        <div className="flex bg-gray-400 rounded-2xl flex-col w-9 items-center justify-start text-center text-3xl py-[6px] min-h-[140px] border border-solid border-gray-900">
-          <div className={circleClass}></div>
-          <div className="relative flex flex-1">
-            <div className={nameClass}>
-              {name.split("").map((i, idx) => (
-                <span key={idx}>{i}</span>
-              ))}
-            </div>
-            <div className={furiganaClass}>
-              {furigana.split("").map((i, idx) => (
-                <span key={idx}>{i}</span>
-              ))}
+        <div className="flex flex-col">
+          <div className="flex bg-gray-400 rounded-2xl flex-col w-9 items-center justify-start text-center text-3xl py-[6px] min-h-[140px] border border-solid border-gray-900">
+            <div className={circleClass}></div>
+            <div className="relative flex flex-1">
+              <div className={nameClass}>
+                {name.split("").map((i, idx) => (
+                  <span key={idx}>{i}</span>
+                ))}
+              </div>
+              <div className={furiganaClass}>
+                {furigana.split("").map((i, idx) => (
+                  <span key={idx}>{i}</span>
+                ))}
+              </div>
             </div>
           </div>
+          <TransferLine stationId={id} />
         </div>
       </div>
     </section>

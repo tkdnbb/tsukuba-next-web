@@ -10,6 +10,9 @@ module.exports = {
       number: ["Rajdhani", "sans-serif"],
     },
     extend: {
+      fontSize: {
+        xxs: "10px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
